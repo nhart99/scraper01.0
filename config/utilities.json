@@ -1,0 +1,234 @@
+{
+  "utilities": [
+    {
+      "id": "pge",
+      "name": "Pacific Gas & Electric (PG&E)",
+      "type": "IOU",
+      "region": "California, USA",
+      "rfp_url": "https://www.pge.com/en/about/doing-business-with-pge/purchase-programs/bid-opportunities.html",
+      "procurement_portal": "https://www.pge.com/suppliers/",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "sdge",
+      "name": "San Diego Gas & Electric (SDG&E)",
+      "type": "IOU",
+      "region": "California, USA",
+      "rfp_url": "https://www.sdge.com/more-information/doing-business-with-us/rfps-rfos",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "sce",
+      "name": "Southern California Edison (SCE)",
+      "type": "IOU",
+      "region": "California, USA",
+      "rfp_url": "https://www.sce.com/partners/supplier-diversity/opportunities",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "duke",
+      "name": "Duke Energy",
+      "type": "IOU",
+      "region": "Multi-state, USA",
+      "rfp_url": "https://www.duke-energy.com/partner-with-us/suppliers/requests-for-proposal",
+      "procurement_portal": "https://www.duke-energy.com/partner-with-us/suppliers/rfx-wood-mackenzie",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "southern_co",
+      "name": "Southern Company",
+      "type": "IOU",
+      "region": "Southeast, USA",
+      "rfp_url": "https://www.southerncompany.com/about/suppliers/fuel-services.html",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "firstenergy",
+      "name": "FirstEnergy Corp",
+      "type": "IOU",
+      "region": "Multi-state, USA",
+      "rfp_url": "https://www.firstenergycorp.com/upp/md/power_procurements.html",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "aep",
+      "name": "American Electric Power (AEP)",
+      "type": "IOU",
+      "region": "Multi-state, USA",
+      "rfp_url": "https://www.aep.com/b2b/rfp/",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "srp",
+      "name": "Salt River Project (SRP)",
+      "type": "Municipal",
+      "region": "Arizona, USA",
+      "rfp_url": "https://www.srpnet.com/doing-business/suppliers/proposal-request",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "cps_energy",
+      "name": "CPS Energy",
+      "type": "Municipal",
+      "region": "Texas, USA",
+      "rfp_url": "https://www.cpsenergy.com/en/work-with-us/procurement-and-suppliers/bid-opportunities.html",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "ncpa",
+      "name": "Northern California Power Agency (NCPA)",
+      "type": "Municipal",
+      "region": "California, USA",
+      "rfp_url": "https://www.ncpa.com/bidding-opportunities-and-public-notifications/request-for-proposals/",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "ladwp",
+      "name": "Los Angeles Department of Water & Power (LADWP)",
+      "type": "Municipal",
+      "region": "California, USA",
+      "rfp_url": "https://www.ladwp.com/ladwp/faces/ladwp/aboutus/a-doingbusiness/a-db-businessopportunities",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "smud",
+      "name": "Sacramento Municipal Utility District (SMUD)",
+      "type": "Municipal",
+      "region": "California, USA",
+      "rfp_url": "https://www.smud.org/en/Corporate/Do-Business-with-SMUD/Bids-and-RFPs",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "seattle_city_light",
+      "name": "Seattle City Light",
+      "type": "Municipal",
+      "region": "Washington, USA",
+      "rfp_url": "http://www.seattle.gov/citylight/business-services/vendor-opportunities",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "austin_energy",
+      "name": "Austin Energy",
+      "type": "Municipal",
+      "region": "Texas, USA",
+      "rfp_url": "https://austinenergy.com/ae/about/company-profile/regulatory/requests-for-proposals",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "hydro_quebec",
+      "name": "Hydro-Québec",
+      "type": "Provincial Crown Corp",
+      "region": "Quebec, Canada",
+      "rfp_url": "https://www.hydroquebec.com/suppliers/bidding/current-tender-calls.html",
+      "procurement_portal": "https://www.hydroquebec.com/electricity-purchases-quebec/requests-for-proposals/",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "bc_hydro",
+      "name": "BC Hydro",
+      "type": "Provincial Crown Corp",
+      "region": "British Columbia, Canada",
+      "rfp_url": "https://www.bchydro.com/work-with-us/suppliers/bid-opportunities.html",
+      "procurement_portal": "https://www.bcbid.gov.bc.ca/",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "hydro_one",
+      "name": "Hydro One",
+      "type": "Provincial Crown Corp",
+      "region": "Ontario, Canada",
+      "rfp_url": "https://www.hydroone.com/about/suppliers",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "opg",
+      "name": "Ontario Power Generation (OPG)",
+      "type": "Provincial Crown Corp",
+      "region": "Ontario, Canada",
+      "rfp_url": "https://www.opg.com/suppliers/",
+      "procurement_portal": "https://discovery.ariba.com/profile/opg",
+      "scraper_type": "ariba",
+      "active": true
+    },
+    {
+      "id": "manitoba_hydro",
+      "name": "Manitoba Hydro",
+      "type": "Provincial Crown Corp",
+      "region": "Manitoba, Canada",
+      "rfp_url": "https://www.hydro.mb.ca/corporate/suppliers/",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "saskpower",
+      "name": "SaskPower",
+      "type": "Provincial Crown Corp",
+      "region": "Saskatchewan, Canada",
+      "rfp_url": "https://www.saskpower.com/about-us/our-company/partnerships-and-suppliers",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "xcel_energy",
+      "name": "Xcel Energy",
+      "type": "IOU",
+      "region": "Multi-state, USA",
+      "rfp_url": "https://www.xcelenergy.com/company/rates_and_regulations/resource_plans/renewable_energy_request_for_proposals",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "dte_energy",
+      "name": "DTE Energy",
+      "type": "IOU",
+      "region": "Michigan, USA",
+      "rfp_url": "https://newlook.dteenergy.com/wps/wcm/connect/dte-web/home/service-request/common/rfp",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "consumers_energy",
+      "name": "Consumers Energy",
+      "type": "IOU",
+      "region": "Michigan, USA",
+      "rfp_url": "https://www.consumersenergy.com/company/suppliers",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "dominion",
+      "name": "Dominion Energy",
+      "type": "IOU",
+      "region": "Multi-state, USA",
+      "rfp_url": "https://www.dominionenergy.com/company/suppliers/rfp",
+      "scraper_type": "html",
+      "active": true
+    },
+    {
+      "id": "con_edison",
+      "name": "Consolidated Edison (Con Edison)",
+      "type": "IOU",
+      "region": "New York, USA",
+      "rfp_url": "https://www.coned.com/en/business-partners/business-opportunities",
+      "scraper_type": "html",
+      "active": true
+    }
+  ]
+}
