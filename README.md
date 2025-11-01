@@ -13,11 +13,21 @@ This modernized scraper automatically monitors procurement portals from 25+ majo
 ### Key Features
 
 - **Intelligent Content Extraction**: Uses AI-like pattern recognition to identify and extract RFP information
+- **JavaScript Rendering**: Handles dynamic content with Playwright browser automation
+- **PDF Extraction**: Automatically downloads and extracts text from PDF RFPs
 - **Multi-Format Output**: JSON, Markdown, and text summary reports
 - **Configuration-Driven**: Easy to add new utilities via JSON config
 - **Robust Error Handling**: Logging, retries, and graceful failure handling
 - **No Authentication Required**: Only scrapes public-facing pages
 - **Structured Output**: Provides RFP name, summary, requester, dates, and links
+
+### New in Version 2.0
+
+- ✅ **JavaScript Support**: Scrape SPAs and dynamic content (Playwright)
+- ✅ **PDF Extraction**: Extract text from PDF RFPs (PyPDF2, pdfplumber)
+- ✅ **Enhanced Extraction**: Better RFP ID and date detection
+- ✅ **Ariba Awareness**: Notes about Ariba portals and public alternatives
+- ✅ **Comprehensive Docs**: Installation, features, and configuration guides
 
 ## Architecture
 
@@ -80,27 +90,37 @@ Utilities are configured in `config/utilities.json`:
 
 ## Installation
 
-### Prerequisites
-
-- Python 3.8+
-- pip
-
-### Setup
+### Quick Start
 
 ```bash
-# Clone or navigate to the project directory
-cd scraper01.0
-
-# Create virtual environment (recommended)
-python -m venv venv
+# 1. Create and activate virtual environment
+python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# Install dependencies
+# 2. Install Python dependencies
 pip install -r requirements.txt
 
-# Create necessary directories
+# 3. Install Playwright browsers (for JavaScript rendering)
+playwright install chromium
+
+# 4. Create directories
 mkdir -p output logs
+
+# 5. Test installation
+python src/main.py --utility srp --print-only
 ```
+
+**📖 For detailed installation instructions including troubleshooting, see [INSTALL.md](INSTALL.md)**
+
+### Minimal Installation (No JavaScript/PDF)
+
+If you don't need JavaScript rendering or PDF extraction:
+
+```bash
+pip install requests beautifulsoup4 lxml loguru python-dateutil
+```
+
+The scraper will automatically skip JavaScript and PDF features if dependencies are missing.
 
 ## Usage
 
@@ -328,6 +348,37 @@ The scraper includes comprehensive error handling:
 
 This project is provided as-is for utility procurement monitoring purposes.
 
+## Documentation
+
+Comprehensive documentation is available:
+
+- **[README.md](README.md)** - This file (overview and quick start)
+- **[INSTALL.md](INSTALL.md)** - Detailed installation guide with troubleshooting
+- **[FEATURES.md](FEATURES.md)** - Advanced features (JavaScript, PDF, LLM extraction)
+- **[UTILITIES.md](UTILITIES.md)** - Complete list of configured utilities with URLs
+- **[examples/test_scraper.py](examples/test_scraper.py)** - Example programmatic usage
+
+### Key Topics
+
+**Installation & Setup:**
+- [INSTALL.md](INSTALL.md) - Full installation guide
+- [Quick Start](#installation) - Basic setup in this README
+
+**Advanced Capabilities:**
+- [JavaScript Rendering](FEATURES.md#javascript-rendering) - Scrape dynamic content
+- [PDF Extraction](FEATURES.md#pdf-extraction) - Extract text from RFP PDFs
+- [Intelligent Extraction](FEATURES.md#intelligent-content-extraction) - LLM-like analysis
+
+**Configuration:**
+- [Adding Utilities](UTILITIES.md#adding-more-utilities) - How to add new utilities
+- [Configuration Options](FEATURES.md#configuration-examples) - Available config flags
+- [Utility List](UTILITIES.md) - All 25+ configured utilities
+
+**Usage:**
+- [Command Line Options](#command-line-options) - CLI reference
+- [Examples](#examples) - Common usage patterns
+- [Scheduling](#scheduling-automated-runs) - Automate with cron/Task Scheduler
+
 ## Support
 
 For issues or questions:
@@ -335,6 +386,7 @@ For issues or questions:
 2. Run with `--verbose` flag for detailed debugging
 3. Review utility configuration in `config/utilities.json`
 4. Verify network connectivity to target utilities
+5. See [INSTALL.md](INSTALL.md) for troubleshooting
 
 ## Original Version
 

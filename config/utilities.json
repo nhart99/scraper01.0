@@ -8,6 +8,9 @@
       "rfp_url": "https://www.pge.com/en/about/doing-business-with-pge/purchase-programs/bid-opportunities.html",
       "procurement_portal": "https://www.pge.com/suppliers/",
       "scraper_type": "html",
+      "requires_js": false,
+      "has_pdfs": true,
+      "max_pdfs_to_extract": 5,
       "active": true
     },
     {
@@ -36,6 +39,10 @@
       "rfp_url": "https://www.duke-energy.com/partner-with-us/suppliers/requests-for-proposal",
       "procurement_portal": "https://www.duke-energy.com/partner-with-us/suppliers/rfx-wood-mackenzie",
       "scraper_type": "html",
+      "requires_js": false,
+      "has_pdfs": true,
+      "max_pdfs_to_extract": 3,
+      "notes": "Major RFPs posted on public page (not just Ariba) for competitive bidding compliance",
       "active": true
     },
     {
@@ -72,6 +79,9 @@
       "region": "Arizona, USA",
       "rfp_url": "https://www.srpnet.com/doing-business/suppliers/proposal-request",
       "scraper_type": "html",
+      "requires_js": false,
+      "has_pdfs": true,
+      "max_pdfs_to_extract": 5,
       "active": true
     },
     {
@@ -136,6 +146,10 @@
       "rfp_url": "https://www.hydroquebec.com/suppliers/bidding/current-tender-calls.html",
       "procurement_portal": "https://www.hydroquebec.com/electricity-purchases-quebec/requests-for-proposals/",
       "scraper_type": "html",
+      "requires_js": true,
+      "js_wait_for": "table",
+      "has_pdfs": true,
+      "max_pdfs_to_extract": 5,
       "active": true
     },
     {
@@ -165,6 +179,10 @@
       "rfp_url": "https://www.opg.com/suppliers/",
       "procurement_portal": "https://discovery.ariba.com/profile/opg",
       "scraper_type": "ariba",
+      "requires_js": false,
+      "has_pdfs": false,
+      "max_pdfs_to_extract": 0,
+      "notes": "Ariba portal hostile to robots - major RFPs typically posted on public OPG page for compliance",
       "active": true
     },
     {

@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from scraper_core import ScraperManager
 from enhanced_scraper import EnhancedUtilityScraper
+from advanced_scraper import AdvancedUtilityScraper, PDFRFPScraper
 from reporter import RFPReporter, print_summary
 import json
 import time
@@ -113,7 +114,8 @@ def main():
                     break
 
         if utility_config:
-            scraper = EnhancedUtilityScraper(utility_config)
+            # Use advanced scraper with JS and PDF support
+            scraper = AdvancedUtilityScraper(utility_config)
             opportunities = scraper.scrape()
         else:
             logger.error(f"Utility {args.utility} not found in config")
@@ -130,7 +132,8 @@ def main():
 
         for utility_config in utilities_to_scrape:
             try:
-                scraper = EnhancedUtilityScraper(utility_config)
+                # Use advanced scraper with JS and PDF support
+                scraper = AdvancedUtilityScraper(utility_config)
                 util_opps = scraper.scrape()
                 opportunities.extend(util_opps)
 
